@@ -1,0 +1,35 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+<script src="options.js"></script>
+<head>
+    <title>Waiting Room Options</title>
+
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+
+</head>
+
+<body>
+<h1>Waiting Room Options</h1>
+<div id="container">
+    <label for="server">Sever :</label><input id="server" type="text" name="sever" value="http://127.0.0.1:8000/app/input">
+    <br>
+    <label for="name">Sever :</label><input id="name" type="text" name="sever" value="Student">
+    <br>
+    <button id="Save">Save</button>
+    <br>
+    <div id ="serverTest"></div>
+</div>
+</body>
+</html>
